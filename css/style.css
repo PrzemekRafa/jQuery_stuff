@@ -36,3 +36,19 @@ p {
     padding: 30px;
     margin: 30px;
 }
+
+#animacja {
+    width: 400px;
+    height: 400px;
+    background-color: burlywood;
+}
+
+#animowany {
+    height: 90%;
+    width: 200px;
+    background-color: chocolate;
+}
+
+.kliknij_mnie {
+    
+}

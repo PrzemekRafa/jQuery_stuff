@@ -80,6 +80,8 @@ $(document).ready(function(){
     
     toggleDiv();
     
+    animateDiv();
+    
 });
 
 function clickMouseover () {
@@ -147,9 +149,19 @@ function slides () {
     $(parent).slideUp(3000).slideDown(3000);
 }
 
+/*  TOGGLE przełącza pokazywanie i ukrywanie    */
 function toggleDiv () {
     var parent = $('#show_hide');
     $(parent).click(function(){
         $(this).find('h1').toggle(2000);
+    })
+}
+
+function animateDiv () {
+    var parent = $('#animacja');
+    $(parent).find('button').click(function () {
+        $(parent).find('#animowany').animate({width: '100%'},'slow',function(){
+            $(this).animate({width: '200px'},'slow');
+            });
     })
 }
